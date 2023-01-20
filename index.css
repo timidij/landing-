@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+    color: rgb(17, 2, 2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.up{
+    /* background-image: url("./top.jpg"); */
+    background-repeat: no-repeat;
+    background-color: rgb(28, 201, 143, 0.8);
+    /* opacity: 0.2; */
+    color: white;
+    background: linear-gradient(to right, rgb(196, 134, 134), rgb(90, 90, 255), rgb(223, 170, 71));
+    background-size:cover;
+
+}
+.navi{
+    display: flex;
+    justify-content: right;
+    
+}
+.navi > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 30px;
+
+}
+.navi > a:hover{
+    color: white;
+}
+.write{
+    width: 60%;
+    margin-left: 30px;
+}
+.photo{
+    width: 50%;
+    margin: auto;
+    margin-left: 4%;
+}
+.about{
+    display: flex;
+    margin-top: 30px;
+}
+.about-text{
+    width: 60%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: justify;
+}
+.reason{
+    display: flex;
+    margin-top: 50px;
+   
+}
+.text{
+    margin: auto;
+    margin-left: 5%;
+    /* justify-content: center; */
+    text-align: justify;
+    margin-right: 5%;
+}
+.services{
+    margin-left: 6%;
+    margin-top: 50px;
+}
+.services > h1{
+    text-align: center;
+}
+.service1{
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+    background-color: rgba(231, 217, 199, 0.034);
+}
+
+.app, .software, .web, .market, .domain, .design{
+    box-shadow: 0px 10px 5px rgb(190, 172, 172);
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+form{
+    margin-top: 10px;
+}
+.formside{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+ 
+    
+}
+input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 30px;
+    border-top: none;
+    background-color: #fff;
+    width: 100%;
+}
+.submit{
+    margin-top: 5px;
+    width: 50%;
+    
+    margin-left: 20%;
+    background-color: rgb(235, 235, 217);
+}
+footer{
+    
+    margin-top: 40px;
+    text-align: right;
+}
+
+@media screen and ( max-width:410px ){
+    
+    .navi{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .navi > a {
+        margin:0px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .reason{
+        flex-direction: column;
+    }
+    .app, .software, .web, .market, .domain, .design{
+        flex-direction: column;
+        width: 95%;
+    }
+    .service1{
+        flex-direction: column;
+    }
+    .formside{
+        width: 99%;
+    }
+}
